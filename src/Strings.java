@@ -61,7 +61,25 @@ public class Strings {
         return count;
     }
 
-
+    public HashMap<String, Integer> categorize(String[] reviews, String[] categories){
+        HashMap<String, Integer> result = new HashMap();
+        for(int i=0;i<reviews.length;i++){
+            for(int c =0;c<categories.length;c++){
+                String[] arr = reviews[i].split(" ");
+                for(int j=0;j<arr.length;j++){
+                    if(arr[j].equals(categories[c])){
+                        if(!result.containsKey(categories[c])){
+                            result.put(categories[c],1);
+                        }else{
+                            int count = result.get(categories[c]);
+                            result.put(categories[c],++count);
+                        }
+                    }
+                }
+            }
+        }
+        return result;
+    }
 
     public static void main(String[] args){
         HashMap<String,ArrayList<String>> result = new HashMap();
@@ -76,6 +94,11 @@ public class Strings {
         list.add("root 4.txt(efgh)");
         result= string.findDuplicateFiles(list);
         System.out.println(result.entrySet());
+        String[] reviews = {"pizza and steak are great", "The fish is overcooked", "The steak was juicy"};
+        String[] categories = {"pizza", "fish", "steak"};
+        HashMap<String,Integer> map = new HashMap();
+        map = string.categorize(reviews, categories);
+        System.out.println(map.entrySet());
     }
 
 }
