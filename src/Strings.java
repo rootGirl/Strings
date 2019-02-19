@@ -81,6 +81,35 @@ public class Strings {
         return result;
     }
 
+    public static StringBuilder reverse(String s){
+        String[] newS = s.split(" ");
+        int start =0;
+        int end = newS.length-1;
+        while(start<end){
+            String temp = newS[start];
+            newS[start]= newS[end];
+            newS[end]=temp;
+            start++;
+            end--;
+        }
+        StringBuilder newString = new StringBuilder(newS.toString());
+        return newString;
+    }
+
+    public static StringBuilder removeLeadingZeroes(String s){
+        StringBuilder newString = new StringBuilder();
+        char[] arr = s.toCharArray();
+        int i = 0;
+        while (arr[i] == '0' && i < arr.length) {
+            i++;
+        }
+        while (i < arr.length) {
+            newString.append(arr[i]);
+            i++;
+        }
+        return newString;
+    }
+    
     public static void main(String[] args){
         HashMap<String,ArrayList<String>> result = new HashMap();
         Strings string = new Strings();
