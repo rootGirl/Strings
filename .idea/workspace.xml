@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/../Sorting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sorting/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Sorting/out/production/Sorting/Sorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sorting/out/production/Sorting/Sorting.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Sorting/src/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sorting/src/Sorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Strings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tree" beforeDir="false" afterPath="$PROJECT_DIR$/../Tree" afterDir="false" />
@@ -20,12 +19,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Strings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
+            <state relative-caret-position="824">
+              <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -68,6 +67,11 @@
             <path>
               <item name="Strings" type="b2602c69:ProjectViewProjectNode" />
               <item name="Strings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Strings" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Strings" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -158,17 +162,19 @@
       <updated>1549045432956</updated>
       <workItem from="1549045436795" duration="230000" />
       <workItem from="1549150194467" duration="130000" />
+      <workItem from="1550537030129" duration="161000" />
+      <workItem from="1551054468154" duration="56000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="360000" />
+    <option name="totallyTimeSpent" value="577000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="137" y="77" width="933" height="526" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25476992" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1914378" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -207,8 +213,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Strings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
+        <state relative-caret-position="824">
+          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
         </state>
       </provider>
     </entry>

@@ -1,5 +1,59 @@
 import java.util.*;
 public class Strings {
+
+    public static String findLongestSubstring(String s1, String s2) {
+        int max = 0;
+        int count = 0;
+        int startIndex = 0;
+        String biggerString = null;
+        String smallerOrEqualString = null;
+        if (s1.length() > s2.length()) {
+            biggerString = s1;
+            smallerOrEqualString = s2;
+        } else {
+            biggerString = s2;
+            smallerOrEqualString = s1;
+        }
+        int i = 0;
+        int j = 0;
+        int finalStartIndex = 0;
+        int finalEndIndex = 0;
+        int previousStart=0;
+        boolean trackFirstMatch = false;
+        boolean trackPreviousStart = false;
+        while (i < biggerString.length() && j < smallerOrEqualString.length()) {
+            if (biggerString.charAt(i) == smallerOrEqualString.charAt(j)) {
+                startIndex = i;
+                if(trackPreviousStart==false){
+                    previousStart=startIndex;
+                }
+                if(trackFirstMatch==false){
+                    finalStartIndex = startIndex;
+                    trackFirstMatch=true;
+                }
+                count++;
+                i++;
+                j++;
+            } else if (count > max) {
+                previousStart=finalStartIndex;
+                trackPreviousStart = true;
+                trackFirstMatch=false;
+                max = count;
+                finalEndIndex = i - 1;
+                i++;
+                count=0;
+            } else {
+                i++;
+            }
+        }
+        //if everything matches, final index = length of shorter/equal string
+        if(finalEndIndex==0){
+            finalEndIndex=biggerString.length()-1;
+        }
+
+
+        return biggerString.substring(previousStart,finalEndIndex+1);
+    }
     //Input:{"root/a 1.txt(abcd) 2.txt(efgh)", "root/c 3.txt(abcd)", "root/c/d 4.txt(efgh)", "root 4.txt(efgh)"}
     //Output:{{"root/a/2.txt","root/c/d/4.txt","root/4.txt"},{"root/a/1.txt","root/c/3.txt}}
     public HashMap<String,ArrayList<String>> findDuplicateFiles(ArrayList<String> list) {
@@ -109,7 +163,7 @@ public class Strings {
         }
         return newString;
     }
-    
+
     public static void main(String[] args){
         HashMap<String,ArrayList<String>> result = new HashMap();
         Strings string = new Strings();
